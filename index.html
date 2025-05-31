@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mfobywatel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="screen active" id="screen-login">
+      <img src="processed_E035D46F-5454-4AD2-9FF5-32225FA58AE2.jpg" alt="login" />
+      <button class="tap" onclick="goTo('screen-home')"></button>
+    </div>
+    <div class="screen" id="screen-home">
+      <img src="processed_9711E0F8-2541-4CCC-8FD8-472BEC9332FD.jpg" alt="home" />
+      <button class="tap" onclick="goTo('screen-id')"></button>
+    </div>
+    <div class="screen" id="screen-id">
+      <img src="processed_17487117-A915-4571-8066-773200B0FC7E.jpg" alt="dowód" />
+      <div class="dane">
+        <p id="imie">IMIĘ: Kuba</p>
+        <p id="nazwisko">NAZWISKO: Testowy</p>
+        <p id="pesel">PESEL: 01234567890</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
